@@ -1,0 +1,482 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #9D7E68;
+}
+
+.bg{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9D7E68; 
+}
+		
+.cookingGame{
+	width:95%;
+	border-style:solid;
+	border-color: orange;
+	padding:20px;
+	border-width:5px;
+	background-color:#9D7E68;
+	border-radius:20px;
+	margin:2%;
+ }
+	  	
+
+/* Recipe Button*/
+#recipe-button{
+	font-family: Condiment, cursive;
+	text-decoration: none;
+	background-color: #FF7F50; 
+	border-radius: 10px;
+	color: white;	
+	padding: 10px 20px;
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+#recipe-button:hover{
+	font-family: Condiment, cursive;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+	position: relative;
+	z-index: 2;
+    display: block;
+    float: left;
+    color: #fa5a5a;
+    transition: .5s;
+}
+
+
+/*Combine&Complete Button*/
+#combine-button{
+	font-family: Condiment, cursive;
+	text-decoration: none;
+	background-color: #87CEEB; 
+	border-radius: 3px;
+	color: white;	
+	padding: 3px 5px;
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+#combine-button:active{
+	font-family: Condiment, cursive;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+	position: relative;
+	z-index: 2;
+    display: block;
+    float: left;
+    color: #fa5a5a;
+    transition: .5s;
+}
+
+#complete-button{
+	font-family: Condiment, cursive;
+	text-decoration: none;
+	background-color: #87CEEB; 
+	border-radius: 3px;
+	color: white;	
+	padding: 3px 5px;
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+#complete-button:active{
+	font-family: Condiment, cursive;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+	position: relative;
+	z-index: 2;
+    display: block;
+    float: left;
+    color: #fa5a5a;
+    transition: .5s;
+}
+
+
+
+#leader-board{
+	margin-left:20px;
+	font-family: Condiment, cursive;
+	text-decoration: none;
+	background-color: #B19886; 
+	border-radius: 10px;
+	color: black;	
+	padding: 10px 20px;
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+#score{
+	font-family: Condiment, cursive;
+	font-weight:bold;
+}
+
+#points{
+	font-family: Condiment, cursive;
+	font-weight:bold;
+
+}
+
+#hpValue{
+	font-weight:bold;
+	margin-left: 50px;
+	font-family: Condiment, cursive;
+	text-decoration: none;	
+	display: inline-block;
+}
+
+/* Menu Bar*/
+
+#menuBar1{
+	font-weight:bold;
+	color: white;
+	background-color: #36261B;
+	font-family: Condiment, cursive;
+	border-radius: 3px;
+	color: white;	
+	padding: 3px 5px;
+	margin-right:50px;
+
+}
+
+#menuBar2{
+	font-weight:bold;
+	color: white;
+	background-color: #36261B;
+	font-family: Condiment, cursive;
+	border-radius: 3px;
+	color: white;	
+	padding: 3px 5px;
+	margin-right:50px;
+}
+
+#menuBar3{
+	font-weight:bold;
+	color: white;
+	background-color: #36261B;
+	font-family: Condiment, cursive;
+	border-radius: 3px;
+	color: white;	
+	padding: 3px 5px;
+	margin-right:50px;
+}
+
+/*List for food, customers and time*/
+#ordered-food-list{
+	width:10%;
+	float:left;
+	background-color: #36261B;
+	border-radius: 10px;
+	padding: 10px 20px;
+	position: fix;
+
+}
+
+#customer-list{
+	width:10%;
+	margin-left: 4.0%;
+	background-color: #36261B;	
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+#time-list{
+	width:10%;
+	font-weight:bold;
+	color: white;
+	margin-left:4.0%;
+	background-color: #36261B;
+	font-family: Condiment, cursive;
+	border-radius: 10px;
+	padding: 10px 20px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.rawfood{
+	width:90px;
+	background-color: #6A4B35;
+	font-family: Condiment, cursive;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 5px 5px;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+		
+.finished{
+	width:90px;
+	background-color: #6A4B35;
+	font-family: Condiment, cursive;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 5px 5px;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+
+.customertimer{
+	margin-bottom: 30px;
+}
+
+
+.interface{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9D7E68; 
+}
+
+.manual-background{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9D7E68; 
+}
+
+.manual{
+	position:absolute;
+	left: 20%;
+	top:80px;
+	font-size: 5vh;
+	width:60vw;
+	height: 80vh;
+	background-color: #9D7E68;
+	border: 10px solid orange;
+	border-radius: 30px;
+	font-family: Georgia, serif;
+}
+
+.record-board{
+	position:absolute;
+	left: 36%;
+	top:80px;
+	font-size: 5vh;
+	width:30vw;
+	height: 80vh;
+	background-color: #9D7E68;
+	border: 10px solid orange;
+	border-radius: 30px;
+	font-family: Georgia, serif;
+}
+
+#back-button{
+	font-size: 5vh;
+	margin-left: 80%;
+	font-family: Condiment, cursive;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: #CD853F;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+#back-button:active{
+	font-family: Condiment, cursive;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+	position: relative;
+	z-index: 2;
+    display: block;
+    transition: .2s;
+}
+
+#back-button:hover{
+	font-family: Condiment, cursive;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+    color: #FFF8DC;
+    transition: .5s;
+}
+
+
+.small-interface{
+	position:absolute;
+	left: 20%;
+	top:120px;
+	width:60vw;
+	padding: 5px 5px;
+	height: 80vh;
+	background-color: #9D7E68;
+	border: 10px solid orange;
+	border-radius: 30px;
+}
+
+#title{
+	margin-top:20px;
+	text-align: center;
+    font-size: 10vh;
+	font-family: Condiment, cursive;
+}
+
+#start-button{
+	margin-top: 90px;
+	margin-left: 150px;
+	margin-right: 150px;
+    text-align: center;
+    font-size: 5vh;
+	font-family: Condiment, cursive;
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	background-color: #CD853F;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+#start-button:hover{
+	font-family: Condiment, cursive;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+    color: #FFF8DC;
+    transition: .5s;
+}
+
+
+#description-button{
+	margin-top: 90px;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: center;
+    font-size: 5vh;
+	font-family: Condiment, cursive;
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	background-color: #CD853F;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+#description-button:hover{
+	font-family: Condiment, cursive;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+    color: #FFF8DC;
+    transition: .5s;
+}
+
+#leaderboard-button{
+	margin-top: 90px;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: center;
+    font-size: 5vh;
+	font-family: Condiment, cursive;
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	background-color: #CD853F;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+
+#leaderboard-button:hover{
+	font-family: Condiment, cursive;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+    color: #FFF8DC;
+    transition: .5s;
+}
+
+.rawfoodlist-col{
+	margin-left: 2%;
+}
+
+.finished-col{
+	margin-left:50px;
+}
+
+.finished:active{
+	background-color: #FF7F50;
+}
+
+.rawfood:active{
+	background-color: #FF7F50;
+}
+
+ @keyframes gameover-animation{
+	from{ transform:rotate(0deg); font-size:1px; opacity:0; }
+	to{ transform:rotate(1440deg); font-size:100px; opacity:1; }
+} 
+
+#gameover{
+	transform: translate(600px,300px);	
+	font-size: 100px;
+	text-align: center;
+	position: absolute;
+	color: white;
+	z-index: 9999;
+    font-family: Condiment, cursive;
+    animation-name:gameover-animation;
+    animation-duration:3s;
+    animation-timing-function:linear;
+    animation-iteration-count:1;
+}
